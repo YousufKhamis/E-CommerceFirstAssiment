@@ -19,9 +19,6 @@ updateStyles();
 // Listen for input changes
 searchInput.addEventListener("input", updateStyles);
 
-
-
-
 //CONTROL SLIDE
 const wrapper = document.querySelector(".sliderWrapper");
 const slides = document.querySelectorAll(".slide");
@@ -29,9 +26,16 @@ const prevBtn = document.querySelector(".prevBtn");
 const nextBtn = document.querySelector(".nextBtn");
 let currentSlide = 0;
 
+// function showSlide() {
+//   slides.forEach((slide, i) => {
+//     slide.style.transform = `translateX(-${currentSlide * 90}rem)`;
+//   });
+// }
+
 function showSlide() {
   slides.forEach((slide, i) => {
-    slide.style.transform = `translateX(-${currentSlide * 90}rem)`;
+    const slideWidth = slide.clientWidth;
+    slide.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
   });
 }
 
