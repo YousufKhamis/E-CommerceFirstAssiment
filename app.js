@@ -24,17 +24,18 @@ const wrapper = document.querySelector(".sliderWrapper");
 const slides = document.querySelectorAll(".slide");
 const prevBtn = document.querySelector(".prevBtn");
 const nextBtn = document.querySelector(".nextBtn");
+const slideBg = document.querySelectorAll(".slideBg");
 let currentSlide = 0;
-
-// function showSlide() {
-//   slides.forEach((slide, i) => {
-//     slide.style.transform = `translateX(-${currentSlide * 90}rem)`;
-//   });
-// }
 
 function showSlide() {
   slides.forEach((slide, i) => {
     const slideWidth = slide.clientWidth;
+    slide.style.width = slideWidth;
+    if (screen.width < 450) {
+      slideBg.forEach((slideBg) => {
+        slideBg.style.width = slideWidth;
+      });
+    }
     slide.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
   });
 }
