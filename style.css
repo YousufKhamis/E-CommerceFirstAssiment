@@ -12,20 +12,20 @@ html {
 
 a {
   text-decoration: none;
-  color: white;
+  color: rgb(252, 255, 238);
 }
 
 body {
   font-family: "Poppins", sans-serif;
-  /* background-color: aqua; */
+  background-color: rgb(252, 255, 238);
 }
 
 nav {
   background-color: rgb(83 83 57);
-  color: white;
+  color: rgb(252, 255, 238);;
   padding: 1rem 2rem;
   text-decoration: none;
-  color: white;
+  color: rgb(252, 255, 238);;
 }
 
 .navTop {
@@ -206,11 +206,11 @@ nav {
 }
 
 .slide:nth-child(1) .slideBg {
-  background-color: white;
+  background-color: rgb(252, 255, 238);
 }
 
 .slide:nth-child(2) .slideBg {
-  background-color: rgb(12, 175, 175);
+  background-color: rgb(133, 151, 183);
 }
 
 .slide:nth-child(3) .slideBg {
@@ -218,7 +218,7 @@ nav {
 }
 
 .slide:nth-child(4) .slideBg {
-  background-color: rgb(133, 151, 183);
+  background-color: rgb(70, 157, 157);
 }
 
 .slide:nth-child(5) .slideBg {
