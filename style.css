@@ -222,7 +222,7 @@ nav {
 }
 
 .slide:nth-child(5) .slideBg {
-  background-color: rgb(233, 155, 155);
+  background-color: rgb(209, 117, 117);
 }
 
 .footer {
@@ -287,7 +287,7 @@ nav {
     padding: 1rem;
   }
 
-  .slideBg {
-    
+  .prevBtn, .nextBtn {
+    padding: 1.2rem 1.4rem;
   }
 }

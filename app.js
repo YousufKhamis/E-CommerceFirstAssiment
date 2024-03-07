@@ -31,7 +31,7 @@ function showSlide() {
   slides.forEach((slide, i) => {
     const slideWidth = slide.clientWidth;
     slide.style.width = slideWidth;
-    if (screen.width < 450) {
+    if (screen.width < 400) {
       slideBg.forEach((slideBg) => {
         slideBg.style.width = slideWidth;
       });
